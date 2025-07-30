@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import  SimpleList  from "./pages/SimpleList/index.jsx"
 import  SimpleList2  from "./pages/SimpleList2/index.jsx"
+import { UseStateDemo } from "./pages/UseStateDemo/index.jsx"
 import { NotFound } from './pages/NotFound/index.jsx'
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/simpleList2",
         element: <SimpleList2 />
+      },
+      {
+        path: "/useStateDemo",
+        element: <UseStateDemo />
       }
     ]
   },

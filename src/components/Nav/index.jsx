@@ -15,7 +15,7 @@ export const Nav = () => {
                     <NavLink className={classes['nav-link']} to="/simpleList2">Simple list 2</NavLink>
                 </li>
                 <li className={classes['nav-itm']}>
-                    <NavLink className={classes['nav-link']} to="/simpleList">Hooks - useState</NavLink>
+                    <NavLink className={classes['nav-link']} to="/useStateDemo">Hooks - useState</NavLink>
                 </li>
             
             </ul>

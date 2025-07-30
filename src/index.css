@@ -1,5 +1,13 @@
 * {
     box-sizing: border-box;
+    font-family: BlinkMacSystemFont,
+        -apple-system,
+        Roboto,
+        Helvetica,
+        Segoe UI,
+        Arial,
+        sans-serif;
+    font-size: 16px;
 }
 
 html, body {
