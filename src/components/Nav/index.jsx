@@ -17,7 +17,9 @@ export const Nav = () => {
                 <li className={classes['nav-itm']}>
                     <NavLink className={classes['nav-link']} to="/useStateDemo">Hooks - useState</NavLink>
                 </li>
-            
+                <li className={classes['nav-itm']}>
+                    <NavLink className={classes['nav-link']} to="/useEffectDemo">Hooks - useEffect</NavLink>
+                </li>
             </ul>
         </div>
     )
