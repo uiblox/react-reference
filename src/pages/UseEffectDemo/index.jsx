@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFetch } from "../../hooks/useFetch";
 import classes from "./styles.module.css";
 
@@ -7,14 +7,18 @@ function generateRandomNumber () {
 }
 
 export const UseEffectDemo = () => {
-    const [fact, setFact] = useState(generateRandomNumber)
+    const [fact, setFact] = useState(localStorage.getItem("fact") || generateRandomNumber)
 
     const handleBtnClick = () => {
-        const newTriviaNum = generateRandomNumber(); 
+        const newTriviaNum = generateRandomNumber();
         setFact(newTriviaNum)
     }
     
     const {data, loading,} = useFetch(`http://numbersapi.com/${fact}`);
+
+    useEffect(() => {
+        localStorage.setItem("fact", fact)
+    },[fact])
 
     return (
         <div className={classes['page-container']}>
