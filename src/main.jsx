@@ -6,6 +6,7 @@ import App from './App.jsx'
 import  SimpleList  from "./pages/SimpleList/index.jsx"
 import  SimpleList2  from "./pages/SimpleList2/index.jsx"
 import { UseStateDemo } from "./pages/UseStateDemo/index.jsx"
+import { UseEffectDemo1 } from "./pages/useEffectDemo1/index.jsx"
 import { UseEffectDemo } from './pages/UseEffectDemo/index.jsx'
 import { NotFound } from './pages/NotFound/index.jsx'
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/useStateDemo",
         element: <UseStateDemo />
+      },
+      {
+        path: "/useEffectDemo1",
+        element: <UseEffectDemo1 />
       },
       {
         path: "/useEffectDemo",

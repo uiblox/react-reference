@@ -1,0 +1,9 @@
+.move {
+    color: cyan;
+    font-size: 2rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: black;
+}
