@@ -9,6 +9,7 @@ import { UseStateDemo } from "./pages/UseStateDemo/index.jsx"
 import { UseEffectDemo1 } from "./pages/useEffectDemo1/index.jsx"
 import { UseEffectDemo } from './pages/UseEffectDemo/index.jsx'
 import { UseRefDemo1 } from "./pages/useRefDemo1/index.jsx"
+import { UseCallBackDemo } from "./pages/UseCallBackDemo/index.jsx"
 import { NotFound } from './pages/NotFound/index.jsx'
 
 const router = createBrowserRouter([
@@ -40,7 +41,12 @@ const router = createBrowserRouter([
       {
         path: "/useRefDemo1",
         element: <UseRefDemo1 />
-      }
+      },
+      {
+        path: "/useCallBackDemo",
+        element: <UseCallBackDemo />
+      },
+      
     ]
   },
 ])
