@@ -23,6 +23,9 @@ export const Nav = () => {
                 <li className={classes['nav-itm']}>
                     <NavLink className={classes['nav-link']} to="/useEffectDemo">Hooks - useEffect</NavLink>
                 </li>
+                <li className={classes['nav-itm']}>
+                    <NavLink className={classes['nav-link']} to="/useRefDemo1">Hooks - useRef - target elements</NavLink>
+                </li>
             </ul>
         </div>
     )
